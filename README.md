@@ -1,71 +1,74 @@
-# MMM-Template
-Use this template for creating new MagicMirror² modules.
+# MMM-Duolingo-Streak
 
-See the [wiki page](https://github.com/Dennis-Rosenbaum/MMM-Template/wiki) for an in depth overview of how to get started.
+A simple MagicMirror² module that displays your **Duolingo streak** directly on your smart mirror.
 
-# MMM-Template
+🔥 Know at a glance whether you’ve done your daily lesson — or if your streak is freezing over 🥶!
 
-![Example of MMM-Template](./example_1.png)
+## ✨ Preview
 
-[Module description]
+![Example display](./duolingo-streak-image.png)
 
-## Installation
 
-### Install
+## 📦 Installation
 
-In your terminal, go to your [MagicMirror²][mm] Module folder and clone MMM-Template:
+Open a terminal on your MagicMirror device and run:
 
 ```bash
 cd ~/MagicMirror/modules
-git clone [GitHub url]
+git clone https://github.com/thomaspich/MMM-Duolingo-Streak.git
 ```
 
-### Update
+## 🔄 Update
 
-```bash
-cd ~/MagicMirror/modules/MMM-Template
+To update the module:
+
+```
+cd ~/MagicMirror/modules/MMM-Duolingo-Streak
 git pull
 ```
 
-## Using the module
+## ⚙️ Configuration
 
-To use this module, add it to the modules array in the `config/config.js` file:
+Add the following to your config/config.js:
 
-```js
-    {
-        module: 'MMM-Template',
-        position: 'lower_third'
-    },
+```
+{
+  module: 'MMM-Duolingo-Streak',
+  position: 'top_left', // Or wherever you like
+  config: {
+    username: 'ThomasPichard', // Your Duolingo username
+    updateInterval: 5 // Update interval in minutes (default: 5)
+  }
+}
 ```
 
-Or you could use all the options:
+## 🛠️ Configuration Options
 
-```js
-    {
-        module: 'MMM-Template',
-        position: 'lower_third',
-        config: {
-            exampleContent: 'Welcome world'
-        }
-    },
-```
+|Option|	Type|	Default|	Description|
+|-|-|-|-|
+|username|	string|	“”|	Your Duolingo username|
+|updateInterval|	int|	5|	Update frequency in minutes|
 
-## Configuration options
 
-Option|Possible values|Default|Description
-------|------|------|-----------
-`exampleContent`|`string`|not available|The content to show on the page
+## 💡 Features
+- Fetches data from API in realtime
+- Displays your current streak
+- Shows 🔥 if your lesson is done today, 🥶 if not
 
-## Sending notifications to the module
 
-Notification|Description
-------|-----------
-`TEMPLATE_RANDOM_TEXT`|Payload must contain the text that needs to be shown on this module
+## 🧪 Example Output
 
-## Developer commands
+🔥 Duolingo Streak: 42 days
+or
+🥶 Duolingo Streak: 42 days (if you haven’t completed your lesson yet)
 
-- `npm install` - Install devDependencies like ESLint.
-- `npm run lint` - Run linting and formatter checks.
-- `npm run lint:fix` - Fix linting and formatter issues.
+## 👤 Author
 
-[mm]: https://github.com/MagicMirrorOrg/MagicMirror
+Make with ❤️ by [@thomaspich](https://github.com/thomaspich)
+
+Forked from [@Dennis-Rosenbaum](https://github.com/Dennis-Rosenbaum/MMM-Template)
+
+
+## 📚 Resources
+- [MagicMirror² Documentation](https://docs.magicmirror.builders)
+- [MagicMirror Forum](https://forum.magicmirror.builders)

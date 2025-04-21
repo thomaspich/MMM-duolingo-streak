@@ -39,7 +39,7 @@ Module.register("MMM-Duolingo-Streak", {
     if (this.streak === null) {
       wrapper.innerHTML = "Chargement du streak Duolingo..."
     } else {
-      wrapper.innerHTML = this.today >= this.endDate ? `<b>🔥 Streak Duolingo :</b> ${this.streak} jour${this.streak > 1 ? "s" : ""}` : `<b>🥶 Streak Duolingo :</b> ${this.streak} jour${this.streak > 1 ? "s" : ""}`
+      wrapper.innerHTML = this.today >= this.endDate ? `<b>🔥 </b> ${this.streak} jour${this.streak > 1 ? "s" : ""}` : `<b>🥶 </b> ${this.streak} jour${this.streak > 1 ? "s" : ""}`
     }
 
     return wrapper
