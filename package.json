@@ -1,8 +1,8 @@
 {
-  "name": "mmm-template",
+  "name": "mmm-duolingo-streak",
   "version": "1.0.0",
-  "description": "[Module description]",
-  "main": "MMM-Template.js",
+  "description": "See your duolingo streak",
+  "main": "MMM-duolingo-streak.js",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -10,17 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+[GitHub url].git"
+    "url": "git+https://github.com/thomaspich/MMM-duolingo-streak.git"
   },
   "keywords": [
-    "template"
+    "duolingo streak",
+    "magic mirror"
   ],
-  "author": "[Author]",
+  "author": "Thomas Pichard",
   "license": "MIT",
   "bugs": {
-    "url": "[GitHub url]/issues"
+    "url": "https://github.com/thomaspich/MMM-duolingo-streak/issues"
   },
-  "homepage": "[GitHub url]#readme",
+  "homepage": "https://github.com/thomaspich/MMM-duolingo-streak#readme",
   "devDependencies": {
     "@eslint/js": "^9.10.0",
     "@stylistic/eslint-plugin": "^2.7.2",
